@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../styles/Login.scss"
 import { useDispatch } from "react-redux"
 import { setLogin } from "../Store/reducers/states"
-import { useNavigate } from "react-router-dom"
+import { useNavigate,Link } from "react-router-dom"
 import axios from "axios"
 
 function LoginPage() {
@@ -57,7 +57,7 @@ function LoginPage() {
             onChange={(e) => setPassword(e.target.value)}
           />
           <button type='submit'>LOG IN</button>
-          <a href="/register">Don't have an account? Sign Up Here</a>
+          <Link to="/register">Don't have an account? Sign Up Here</Link>
         </form>
       </div>
     </div>
