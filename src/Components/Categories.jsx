@@ -16,7 +16,7 @@ function Categories(){
             
             <Link to={`/list/category/${c.label}`}>
                 <div className="category" key={i}>
-                    <img src={c.img} alt={c.label} />
+                    {/* <img src={c.img} alt={c.label} /> */}
                     <div className="overlay"></div>
                     <div className="category_text">
                         <div className="category_text_icon">{c.icon}</div>
