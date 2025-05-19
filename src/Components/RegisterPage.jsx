@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import addImage from "../assets/addImage.png";
 import "../styles/Register.scss";
 import axios from "axios";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
 function RegisterPage() {
@@ -133,7 +133,7 @@ function RegisterPage() {
             REGISTER
           </button>
         </form>
-        <a href="/login">Already have an account? Login In Here</a>
+        <Link to="/login">Already have an account? Login In Here</Link>
       </div>
     </div>
   );
