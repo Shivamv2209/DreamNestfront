@@ -12,16 +12,13 @@ import Footer from "./Footer";
 function ReservationList() {
     const [loading,setLoading] = useState(true);
     const user = useSelector((state)=> state.user)
-    console.log(user)
   const reservationList = user?.reservationlist
-  console.log(reservationList)
   const dispatch = useDispatch()
 
  const getReservationList = async () =>{
     try{
        const response = await axios.get(`http://localhost:3000/triplist/${user._id}/reserv`)
        const data = response.data
-       console.log(data)
        dispatch(setReservationList(data))
        setLoading(false)
     }catch(err){
