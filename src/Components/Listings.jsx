@@ -34,7 +34,6 @@ function Listings() {
     getFeedListing();
   }, [category]);
 
-  console.log(listings);
 
   return (
     <>
